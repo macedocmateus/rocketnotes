@@ -1,11 +1,13 @@
 import { Container } from "./styles.js"
+import { Header } from "../../components/Header/index.jsx"
+import { Button } from "../../components/Button/index.jsx"
 
 export function Details() {
 
   return (
     <Container>
-      <h1>Hello World</h1>
-      <span>Mateus de Castro Macedo</span>
+      <Header />
+      <Button title="Voltar" />
     </Container>
   )
 }
