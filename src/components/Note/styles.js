@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Tag } from "../Tag";
+
 
 export const Container = styled.button`
 width: 100%;
