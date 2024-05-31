@@ -2,7 +2,7 @@ import { Container } from "./styles.js";
 
 export function Tag({ title }) {
     return (
-        <Container>
+        <Container {...rest}>
             {title}
         </Container>
 

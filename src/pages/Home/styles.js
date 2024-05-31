@@ -18,21 +18,52 @@ background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
 export const Brand = styled.div`
 grid-area: brand;
-background-color: red;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+border-bottom:  1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
+background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+> h1 {
+    font-size: 24px;
+    color: ${({ theme }) => theme.COLORS.ORANGE};
+}
 `;
 
 export const Menu = styled.ul`
 grid-area: menu;
-background-color: orange;`;
+background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+padding-top: 64px;
+text-align: center;
+
+> li {
+    margin-bottom: 24px;
+}
+`;
 
 export const Search = styled.div`
 grid-area: search;
-background-color: green;`;
+padding: 64px 64px 0;
+`;
 
 export const Content = styled.div`
 grid-area: content;
-background-color: blue;`;
+`;
 
 export const NewNote = styled.button`
 grid-area: newnote;
-background-color: purple;`;
+
+background-color: ${({ theme }) => theme.COLORS.ORANGE};
+border: none;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+svg {
+    margin-right: 8px;
+}
+`;
