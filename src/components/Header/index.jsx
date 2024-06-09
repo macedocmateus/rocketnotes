@@ -4,7 +4,7 @@ import { Container, Profile, Logout } from "./styles.js";
 export function Header() {
     return (
         <Container>
-            <Profile>
+            <Profile to="/profile">
                 <img
                     src="https://github.com/macedocmateus.png"
                     alt="Foto de Mateus de Castro Macedo">
