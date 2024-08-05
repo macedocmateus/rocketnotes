@@ -8,10 +8,11 @@ import { useAuth } from '../../hooks/auth';
 
 export function Profile() {
     const { user, updateProfile } = useAuth();
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [passwordOld, setPasswordOld] = useState('');
-    const [passwordNew, setPasswordNew] = useState('');
+
+    const [name, setName] = useState(user.name);
+    const [email, setEmail] = useState(user.email);
+    const [passwordOld, setPasswordOld] = useState();
+    const [passwordNew, setPasswordNew] = useState();
 
     async function handleUpdate() {
         const user = {
@@ -47,9 +48,9 @@ export function Profile() {
 
                 <Input placeholder="E-mail" type="text" icon={FiMail} value={email} onChange={(e) => setEmail(e.target.value)} />
 
-                <Input placeholder="Senha atual" type="password" icon={FiLock} onChange={(e) => setOldPassword(e.target.value)} />
+                <Input placeholder="Senha atual" type="password" icon={FiLock} onChange={(e) => setPasswordOld(e.target.value)} />
 
-                <Input placeholder="Nova senha " type="password" icon={FiLock} onChange={(e) => setNewPassword(e.target.value)} />
+                <Input placeholder="Nova senha " type="password" icon={FiLock} onChange={(e) => setPasswordNew(e.target.value)} />
 
                 <Button title="Salvar" onClick={handleUpdate} />
             </Form>

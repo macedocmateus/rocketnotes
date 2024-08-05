@@ -16,7 +16,7 @@ export function AuthProvider({ children }) {
 
             api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
 
-            setData({ user, token });
+            setData({ token, user });
         } catch (error) {
             if (error.response) {
                 alert(error.response.data.message);
