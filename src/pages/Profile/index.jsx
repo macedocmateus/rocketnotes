@@ -53,7 +53,7 @@ export function Profile() {
 
             <Form>
                 <Avatar>
-                    <img src={avatar} alt="Foto do usuário" />
+                    <img src={avatarUrl} alt="Foto do usuário" />
 
                     <label htmlFor="avatar">
                         <FiCamera />

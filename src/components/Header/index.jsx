@@ -11,11 +11,11 @@ export function Header() {
     return (
         <Container>
             <Profile to="/profile">
-                <img src={avatarUrl} alt="Foto do perfil do usuário"></img>
+                <img src={avatarUrl} alt={user.name}></img>
 
                 <div>
                     <span>Bem-vindo</span>
-                    <strong>Mateus de Castro Macedo</strong>
+                    <strong>{user.name}</strong>
                 </div>
             </Profile>
 
