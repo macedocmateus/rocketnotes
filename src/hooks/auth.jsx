@@ -40,6 +40,7 @@ export function AuthProvider({ children }) {
                 fileUploadForm.append('avatar', avatarFile);
 
                 const response = await api.patch('/users/avatar', fileUploadForm);
+                console.log(response);
 
                 user.avatar = response.data.avatar;
             }

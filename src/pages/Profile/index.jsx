@@ -1,5 +1,3 @@
-//FIXME: arrumar upload no avatar
-
 import { useState } from 'react';
 import { Container, Form, Avatar } from './styles.js';
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi';
@@ -53,7 +51,7 @@ export function Profile() {
 
             <Form>
                 <Avatar>
-                    <img src={avatarUrl} alt="Foto do usuário" />
+                    <img src={avatar} alt="Foto do usuário" />
 
                     <label htmlFor="avatar">
                         <FiCamera />
